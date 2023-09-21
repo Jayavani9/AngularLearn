@@ -1,0 +1,20 @@
+<h1>Hii, Welcome to {{name}} </h1>
+
+<app-text-component></app-text-component>
+
+<div style = "text-align:center">
+<input [(ngModel)] = "val" type = "text"> 
+<br>
+{{val}}
+</div>
+
+<app-image-component></app-image-component>
+
+<button (click)="onClick()"> Click Me!!</button>
+<!--<img src = {{imgsrc}}>  --> <!--Interpolation binding -->
+<img [src] = imgsrc>   <!--Property binding -->
+
+<h1 style="text-align: center;"> Employee Details</h1>
+<div style="text-align: center;">
+<app-emp-info></app-emp-info>
+</div>
